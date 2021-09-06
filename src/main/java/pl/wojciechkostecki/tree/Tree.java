@@ -5,13 +5,43 @@ public abstract class Tree {
 
     private double breadthBranches;
 
-    private Leaf typeLeaves;
-
     private int age;
 
-    private Seed typeSeed;
+    public void grow(Tree tree, double width, double height, double breadth,int age){
+        tree.trunk.setWidthTrunk(width);
+        tree.trunk.setHeightTrunk(height);
+        tree.setBreadthBranches(breadth);
+        tree.setAge(age);
+    };
 
-    private boolean isDropLeaves;
+    public Trunk getTrunk() {
+        return trunk;
+    }
 
-    public abstract void grow();
+    public void setTrunk(Trunk trunk) {
+        this.trunk = trunk;
+    }
+
+    public double getBreadthBranches() {
+        return breadthBranches;
+    }
+
+    public void setBreadthBranches(double breadthBranches) {
+        this.breadthBranches = breadthBranches;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return trunk +
+                ", breadthBranches: " + breadthBranches + "cm" +
+                ", age: " + age + " years";
+    }
 }

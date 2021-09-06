@@ -20,4 +20,10 @@ public class Trunk {
     public void setHeightTrunk(double heightTrunk) {
         this.heightTrunk = heightTrunk;
     }
+
+    @Override
+    public String toString() {
+        return  ", widthTrunk: " + widthTrunk + "cm" +
+                ", heightTrunk: " + heightTrunk + "cm";
+    }
 }
