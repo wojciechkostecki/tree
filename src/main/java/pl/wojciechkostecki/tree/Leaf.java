@@ -1,8 +1,8 @@
 package pl.wojciechkostecki.tree;
 
 public enum Leaf {
-    NEEDLE_SHAPED("NEEDLE"),
-    BLADE("BLADE");
+    NEEDLE_SHAPED("needle"),
+    BLADE("blade");
 
     private String value;
 

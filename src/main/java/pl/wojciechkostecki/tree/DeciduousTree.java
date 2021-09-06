@@ -1,13 +1,13 @@
 package pl.wojciechkostecki.tree;
 
-public class ConiferousTree extends Tree{
-    private final Leaf typeLeaf = Leaf.NEEDLE_SHAPED;
-    private final Seed typeSeed = Seed.GYMNOSPERMS;
-    private final boolean isDropLeaves = false;
+public class DeciduousTree extends Tree {
+    private final Leaf typeLeaf = Leaf.BLADE;
+    private final Seed typeSeed = Seed.ANGIOSPERMS;
+    private final boolean isDropLeaves = true;
 
     @Override
     public String toString() {
-        return "Coniferous Tree -> " +
+        return "Deciduous Tree -> " +
                 "leaf type - " + typeLeaf.getValue() +
                 ", seed type - " + typeSeed.getValue() +
                 ", is drop leaves? - " + isDropLeaves +

@@ -1,8 +1,8 @@
 package pl.wojciechkostecki.tree;
 
 public enum Seed {
-    ANGIOSPERMS("ANGIOSPERMS"),
-    GYMNOSPERMS("GYMNOSPERMS");
+    ANGIOSPERMS("angiosperms"),
+    GYMNOSPERMS("gymnosperms");
 
     private String value;
 
